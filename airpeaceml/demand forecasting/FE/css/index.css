@@ -1,0 +1,8 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+th, td{
+    border: 1px solid gray;
+}

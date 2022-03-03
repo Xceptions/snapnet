@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Air Peace Demand Forecasting</title>
+    <meta charset='utf-8'/>
+    <!-- <link rel='stylesheet' href='./css/w3.css'/> -->
+    <!-- <link rel='stylesheet' href='./css/bootstrap/css/bootstrap.min.css' /> -->
+    <link rel='stylesheet' href='./css/index.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='bg-blue-700 py-3 text-center tracking-wider text-white shadow-sm mb-10'>
+        <h2 class="text-3xl">Snapnet Soothsayer</h2>
+        <b class="pt-2 text-gray-300">A demand forecasting solution</b>
+    </div>
+
+    <div class="flex justify-center">
+        <form class="flex justify-center space-x-5">
+            <div>
+                <label for="start_date">Start date</label>
+                <input type="date" name="start_date" id="start_date" required class="border-2 rounded px-2 py-1 ml-1">
+            </div>
+               <div class="h-10 bg-blue-500 w-1 rounded"></div>
+            <div>
+                <label for="end_date">End date</label>
+                <input type="date" name="end_date" id="end_date" required class="border-2 rounded px-2 py-1 ml-1">
+            </div>
+              <button type="submit" id="predict" class="bg-blue-500 rounded px-5 text-white hover:bg-blue-800">Submit</button>
+        </form>
+    </div>
+  <hr class="my-7">
+    <div class="flex justify-center px-16 mb-10">
+        <table class="w-full text-center">
+            <thead>
+                <tr class="border">
+                    <th>Index</th>
+                    <th>Date</th>
+                    <th>Ticket type</th>
+                    <th>Ticket class</th>
+                    <th>Expected Sales</th>
+                </tr>
+            </thead>
+
+            <tbody id='preds'>
+                <!-- <tr>
+                    <td id="indexId">1</td>
+                    <td id="dataId">20-02-2021</td>
+                    <td id="ticketTypeId">one_way</td>
+                    <td id="ticketClassId">First</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <div id="preds"></div> -->
+<!--    
+    <div class='content'>
+        <form id="testForm">
+            <label for="startdate">Start date</label>
+            <input id="start_date" type="date">
+            <label for="enddate">End date</label>
+            <input id="end_date" type="date">
+            <input type="submit" id="predict">
+        </form>
+        <div id='preds'>For now</div>
+    </div> -->
+    <script src='./js/jquery.min.js'></script>
+    <!-- <script src='./css/bootstrap/js/bootstrap.min.js'></script> -->
+    <script src='./js/index.js'></script>
+</body>
+</html>
